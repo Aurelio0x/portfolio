@@ -1,0 +1,18 @@
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+h2 {
+    font-family: 'Josefin sans', sans-serif;
+}
+
+.logo {
+scale: 70%;
+width: 217px;
+height: 234px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 20%;
+}

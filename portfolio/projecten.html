@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style2.css"/>
+    <script src="slideshow.js"></script>
+    <title>My Portfolio - Projects</title>
+  </head>
+  <body>
+    <header>
+      <h1>Projecten</h1>
+      <nav>
+        <ul>
+          <li><a href="index2.html">Home</a></li>
+          <li><a href="projecten.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="projects">
+      <h2 class="header2">Mijn projecten</h2>
+      <div id="slideshow">
+        <div class="slide">
+          <img src="liljimmy.jpg" alt="Lil' Jimmy">
+          <p class="caption">Lil' Jimmy van CLE 1 in 2021. Mijn eerste creatie ooit. Lil' Jimmy won de eerste wedstrijd van heel het jaar!</p>
+        </div>
+        <div class="slide">
+          <img src="chimmie.jpg" alt="C.H.I.M.M.I.E.">
+          <p class="caption">C.H.I.M.M.I.E. (Consumer's Help In Making Museum Information Eyeseeable) is een variant op Jimmy, die doormiddel van
+            bewegingssensoren en lampen, tekstborden laat oplichten, met een duidelijke kleur voor kleurenblinden, zodat het beter te zien is voor
+            zowel de kleurenblinden als mensen met slechter zicht.
+        </div>
+        <div class="slide">
+          <img src="lisakunst.png" alt="Lisa's Kunst">
+          <p class="caption">Lisa's Kunst van CLE 2 in 2022. Dit was voor mijn opdrachtgever Lisa, die kunst op order wilde maken en verkopen.
+            Hier zit dus een "reserveringssysteem" in die is gekoppeld aan een database, met speciale adminrechten, waarbij CRUD wordt gebruikt.
+          </p>
+        </div>
+        <div class="slide">
+          <img src="bigjim.jpg" alt="Big Jim">
+          <p class="caption">Big Jim, die ik samen heb ontworpen met Melvin Muilwijk. Deze bestaat uit een bewegingssensor die een spuitbus activeert
+            door middel van een servo, zodra er iets in 30 cm wordt waargenomen. Het bestaat ook uit LED's, 2 motoren met 4 wielen, spijkers en geluid.
+            Was onder andere de winnaar van CLE 1 in 2021.
+          </p>
+        </div>
+        <div class="slide">
+          <img src="3dHuis.jpg" alt="3D geprint huis">
+          <p class="caption">Een 3D geprint huis wat ik met een speedcourse had gemaakt, ter ere van de lichting van mijn studentenvereniging.
+          </p>
+        </div>
+        <div class="slide">
+          <img src="pepperoniParty.png" alt="Pepperoni Party">
+          <p class="caption">Een game waar ik aan heb gewerkt in CLE 4 in 2022. Ik werkte samen met o.a. Dylan Schoop en Melvin Muilwijk.
+            Ik heb voor de audio design in het spel gezorgd. Dat de pizza zichtbaar is op het scherm en dat de pizza animeert.
+          </p>
+        </div>
+        <div class="slide">
+          <img src="aureliobullaWebsite.png" alt="Aurelio Bulla alt website">
+          <p class="caption">Een website die ik snel in elkaar had gezet met het BULMA framework. Deze website bevat mijn albums en promootte
+            mijn toen der tijd nieuwste lied "Break Out".
+          </p>
+        </div>
+        <div class="slide">
+          <img src="notenkrakerwebsite.png" alt="Notenkraker Eetschema">
+          <p class="caption">Met mijn huisgenoten van de Notenkraker is het vaak de vraag "wie eet er thuis vanavond?". Daarom heb ik deze
+            website in elkaar gezet, zodat we online kunnen checken wanneer we thuis eten in de week. Het schema reset wekelijks en de huidige
+            dag van de week wordt weergegeven. En hij is universeel zichtbaar omdat het is gelinkt aan een database!
+          </p>
+        </div>
+        <div class="slide">
+          <img src="answers.png" alt="Answers">
+          <p class="caption">Een van mijn eerste uitgebrachte vocale tracks, en een van mijn lievelings. Een lyrisch meesterwerk aan poëzie.
+          </p>
+        </div>
+        <div class="slide">
+          <img src="fyw.jpg" alt="Find Your Way">
+          <p class="caption">Een lied met de beste baslijn die ik tot in heden heb gemaakt. Ter ere van mijn avontuur op de middelbare school en
+            een eind van een hoofdstuk.
+          </p>
+        </div>
+        <div class="slide">
+          <img src="twilight.jpg" alt="twilight">
+          <p class="caption">Het best presterende nummer tot nu toe. Een echte alt-rock knaller die een erg emotionele en sentimentele waarde
+            heeft.
+          </p>
+        </div>
+      </div>
+    </section>
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("slide");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+  </body>
+</html>
