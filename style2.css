@@ -154,3 +154,15 @@ body {
   padding-top: 20px;
   font-size:250%;
 }
+
+.flowers {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+}
+
+.nav2 {
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+}
